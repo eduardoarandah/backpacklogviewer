@@ -12,13 +12,12 @@ https://github.com/Laravel-Backpack/Base
 
 ## Installation
 
-	composer require arcanedev/log-viewer
-	php artisan log-viewer:publish --tag=config
-
 	composer require eduardoarandah/backpacklogviewer
+
+	php artisan log-viewer:publish --tag=config
 	php artisan vendor:publish --provider="EduardoArandaH\BackpackLogViewer\BackpackLogViewerServiceProvider"
 
-This will install packages and required views in resources/views/vendor/log-viewer
+This will install views in resources/views/vendor/log-viewer and config file config/log-viewer.php
 
 ## Configuration
 
