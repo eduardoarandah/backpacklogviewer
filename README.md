@@ -19,31 +19,35 @@ https://github.com/Laravel-Backpack/Base
 This will install packages and required views in resources/views/vendor/log-viewer
 (these views will take precedence over original log-viewer views)
 
-## Important! you must have a daily log
+## Configuration
+
+You must have a daily log
 
 In your config/app.php
 
 	'log' => 'daily',
 
-## Configure Middleware
+## Security
 
-To secure Log Viewer, add 'admin' middleware to your .env file with this line, this will match with your other Laravel-Backpack packages
+To secure Log Viewer, add 'admin' middleware to your .env file with this line
 
 	ARCANEDEV_LOGVIEWER_MIDDLEWARE=web,admin
 
 ## (optional) Configure Permission
 
-Or if you want to restrict access to a specific role, install https://github.com/Laravel-Backpack/PermissionManager 
-and add 'can' middleware like this:
+If you want to use Permission Manager to restrict access 
+add a permission like this:
 
 	ARCANEDEV_LOGVIEWER_MIDDLEWARE=web,admin,can:admin.log-viewer
 
-After that, you can manage your permission like this
+https://github.com/Laravel-Backpack/PermissionManager 
+
+Permission Manager lets you manage access to certain roles
 
 ![permissions](https://user-images.githubusercontent.com/4065733/33958159-46963c1e-e009-11e7-9c14-d9da8cb6f810.png)
 
 
-## Add a link to your backpack sidebar
+## Sidebar Link
 
 go to 
 
