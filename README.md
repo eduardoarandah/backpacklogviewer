@@ -6,23 +6,18 @@ Integrate [ArcaneDev/LogViewer](https://github.com/ARCANEDEV/LogViewer) in your 
 
 # Requirements
 
-Laravel-Backpack/Base
+You must have Laravel-Backpack/Base already installed
 
 https://github.com/Laravel-Backpack/Base
 
-# Install ArcaneDev/LogViewer
-
-https://github.com/ARCANEDEV/LogViewer
-
-## Install package
+## Installation
 
 	composer require arcanedev/log-viewer
-
-## Publish log-viewer views
-
+	composer require eduardoarandah/backpacklogviewer
 	php artisan vendor:publish --provider="EduardoArandaH\BackpackLogViewer\BackpackLogViewerServiceProvider"
 
-This will publish required views in resources/views/vendor/log-viewer these views will take precedence over original log-viewer views
+This will install packages and required views in resources/views/vendor/log-viewer
+(these views will take precedence over original log-viewer views)
 
 ## Important! you must have a daily log
 
