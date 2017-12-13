@@ -57,3 +57,15 @@ go to
 add this line 
 
 	<li><a href="{{ route('log-viewer::logs.list') }}"><i class="fa fa-info-circle"></i> <span>Log Viewer</span></a></li>
+
+## (Optional) Change URL
+
+By default, log-viewer URL is http://website/log-viewer if you want to change to /admin 
+
+publish config file:
+
+	php artisan log-viewer:publish --tag=config
+
+in config/log-viewer.php file change your route:
+
+	'prefix'     => 'admin/log-viewer',
