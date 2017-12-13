@@ -13,11 +13,9 @@ https://github.com/Laravel-Backpack/Base
 ## Installation
 
 	composer require eduardoarandah/backpacklogviewer
-
-	php artisan log-viewer:publish --tag=config
 	php artisan vendor:publish --provider="EduardoArandaH\BackpackLogViewer\BackpackLogViewerServiceProvider"
 
-This will install views in resources/views/vendor/log-viewer and config file config/log-viewer.php
+This will install views in resources/views/vendor/log-viewer
 
 ## Configuration
 
@@ -57,8 +55,12 @@ add this line
 
 ## (Optional) Change URL
 
-By default, log-viewer URL is http://website/log-viewer if you want to change to /admin 
+By default, log-viewer URL is http://website/log-viewer 
 
-in config/log-viewer.php file change your route:
+To change it to /admin publish config file
+
+	php artisan log-viewer:publish --tag=config
+
+Then, in config/log-viewer.php file change your route
 
 	'prefix'     => 'admin/log-viewer',
