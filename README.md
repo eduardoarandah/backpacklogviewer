@@ -2,7 +2,7 @@
 
 Integrate [ArcaneDev/LogViewer](https://github.com/ARCANEDEV/LogViewer) in your [Laravel-Backpack](https://github.com/Laravel-Backpack/Base) project
 
-![screenshot](https://user-images.githubusercontent.com/4065733/29937863-8b9bee30-8e4c-11e7-958f-534896cc230f.png)
+![log-viewer](https://user-images.githubusercontent.com/4065733/33958155-4463c27c-e009-11e7-860c-aae56b2b368f.png)
 
 # Requirements
 
@@ -45,7 +45,7 @@ and add 'can' middleware like this:
 
 After that, you can manage your permission like this
 
-![permiso](https://user-images.githubusercontent.com/4065733/30277684-2cfed146-96ce-11e7-9ed6-27f71efb0757.png)
+![permissions](https://user-images.githubusercontent.com/4065733/33958159-46963c1e-e009-11e7-9c14-d9da8cb6f810.png)
 
 
 ## Add a link to your backpack sidebar
