@@ -1,12 +1,14 @@
 {
-    "name": "EduardoArandaH/BackpackLogViewer",
+    "name": "eduardoarandah/backpacklogviewer",
     "type": "library",
     "description": "Integrate ArcaneDev/LogViewer in your Laravel-Backpack project",
     "keywords": [
         "EduardoArandaH",
-        "BackpackLogViewer"
+        "Laravel",
+        "Laravel Backpack",
+        "Log Viewer"
     ],
-    "homepage": "https://github.com/EduardoArandaH/BackpackLogViewer",
+    "homepage": "https://github.com/eduardoarandah/backpacklogviewer",
     "license": "MIT",
     "authors": [
         {
