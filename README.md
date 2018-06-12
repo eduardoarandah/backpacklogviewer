@@ -6,53 +6,35 @@ Integrate [ArcaneDev/LogViewer](https://github.com/ARCANEDEV/LogViewer) in your 
 
 # Requirements
 
-You must have Laravel-Backpack/Base already installed
+- ![Laravel Backpack](https://github.com/Laravel-Backpack/Base)
 
-https://github.com/Laravel-Backpack/Base
+- Daily logs enabled in your .env file `LOG_CHANNEL=daily`
 
 ## Installation
 
-	composer require eduardoarandah/backpacklogviewer
-	php artisan vendor:publish --provider="EduardoArandaH\BackpackLogViewer\BackpackLogViewerServiceProvider"
+```BASH
+composer require eduardoarandah/backpacklogviewer
 
-Add to your .env file:
+php artisan vendor:publish --provider="EduardoArandaH\BackpackLogViewer\BackpackLogViewerServiceProvider"
 
-	APP_LOG=daily
-	ARCANEDEV_LOGVIEWER_MIDDLEWARE=web,admin
+backpack:base:add-sidebar-content "<li><a href='{{route(\"log-viewer::logs.list\")}}'><i class='fa fa-history'></i> <span>Logs</span></a></li>"
+```
 
-This will set your log files to "daily" and set "admin" middleware
+### (optional) Restrict access
 
-## Sidebar Link
+If you want to use Permission Manager to restrict access add a line in your .env like this:
 
-go to 
-
-	resources/views/vendor/backpack/base/inc/sidebar.blade.php
-
-add this line 
-
-	<li><a href="{{ route('log-viewer::logs.list') }}"><i class="fa fa-info-circle"></i> <span>Log Viewer</span></a></li>
-
-## (optional) Configure Permission
-
-If you want to use Permission Manager to restrict access 
-add a permission like this:
-
-	ARCANEDEV_LOGVIEWER_MIDDLEWARE=web,admin,can:admin.log-viewer
+```
+ARCANEDEV_LOGVIEWER_MIDDLEWARE=web,admin,can:admin.log-viewer
+```
 
 https://github.com/Laravel-Backpack/PermissionManager 
 
-Permission Manager lets you manage access to certain roles
 
-![permissions](https://user-images.githubusercontent.com/4065733/33958159-46963c1e-e009-11e7-9c14-d9da8cb6f810.png)
+## More options 
 
-## (Optional) Change URL
+More options available in /config/log-viewer.php
 
-By default, log-viewer URL is http://website/log-viewer 
+Documentation:
 
-To change it to /admin publish config file
-
-	php artisan log-viewer:publish --tag=config
-
-Then, in config/log-viewer.php file change your route
-
-	'prefix'     => 'admin/log-viewer',
+![https://github.com/ARCANEDEV/LogViewer](https://github.com/ARCANEDEV/LogViewer)

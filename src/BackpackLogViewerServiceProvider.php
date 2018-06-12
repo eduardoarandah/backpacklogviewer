@@ -19,15 +19,11 @@ class BackpackLogViewerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Register your asset's publisher
+        //publish new views and config
         $this->publishes([
-            __DIR__.'/assets/views' => base_path('resources/views/vendor/log-viewer'),
+            __DIR__.'/resources/views' => base_path('resources/views/vendor/log-viewer/backpack'),
+            __DIR__.'/config' => base_path('config'),
         ]);
-
-        // commands
-        // if ($this->app->runningInConsole()) {
-        //     $this->commands($this->commands);
-        // }
     }
 
     /**
