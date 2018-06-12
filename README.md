@@ -20,17 +20,6 @@ php artisan vendor:publish --provider="EduardoArandaH\BackpackLogViewer\Backpack
 backpack:base:add-sidebar-content "<li><a href='{{route(\"log-viewer::logs.list\")}}'><i class='fa fa-history'></i> <span>Logs</span></a></li>"
 ```
 
-### (optional) Restrict access
-
-If you want to use Permission Manager to restrict access add a line in your .env like this:
-
-```
-ARCANEDEV_LOGVIEWER_MIDDLEWARE=web,admin,can:admin.log-viewer
-```
-
-https://github.com/Laravel-Backpack/PermissionManager 
-
-
 ## More options 
 
 More options available in /config/log-viewer.php
