@@ -17,7 +17,7 @@ composer require eduardoarandah/backpacklogviewer
 
 php artisan vendor:publish --provider="EduardoArandaH\BackpackLogViewer\BackpackLogViewerServiceProvider"
 
-backpack:base:add-sidebar-content "<li><a href='{{route(\"log-viewer::logs.list\")}}'><i class='fa fa-history'></i> <span>Logs</span></a></li>"
+php artisan backpack:base:add-sidebar-content "<li><a href='{{route(\"log-viewer::logs.list\")}}'><i class='fa fa-history'></i> <span>Logs</span></a></li>"
 ```
 
 ## More options 
