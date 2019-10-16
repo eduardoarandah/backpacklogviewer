@@ -1,5 +1,5 @@
 {
-    "name": "juventus18/backpacklogviewer",
+    "name": "juventus/backpacklogviewer",
     "type": "library",
     "description": "Integrate ArcaneDev/LogViewer in your Laravel-Backpack project",
     "keywords": [
