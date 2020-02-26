@@ -8,19 +8,24 @@ Integrate [ArcaneDev/LogViewer](https://github.com/ARCANEDEV/LogViewer) in your 
 
 - ![Laravel Backpack](https://github.com/Laravel-Backpack/Base)
 
-- Daily logs enabled in your .env file `LOG_CHANNEL=daily`
 
 ## Installation
+
+Make sure you have set your logs to "daily" in your .env file
+
+`LOG_CHANNEL=daily`
+
+Run this commands:
 
 ```BASH
 composer require eduardoarandah/backpacklogviewer
 
 php artisan vendor:publish --provider="EduardoArandaH\BackpackLogViewer\BackpackLogViewerServiceProvider"
 
-php artisan backpack:base:add-sidebar-content "<li><a href='{{route(\"log-viewer::logs.list\")}}'><i class='fa fa-history'></i> <span>Logs</span></a></li>"
+php artisan backpack:add-sidebar-content "<li class='nav-item'><a class='nav-link' href='{{route(\"log-viewer::logs.list\")}}'><i class='nav-icon fa fa-history'></i> {{ trans('Logs') }}</a></li>"
 ```
 
-## More options 
+## More options
 
 More options available in /config/log-viewer.php
 

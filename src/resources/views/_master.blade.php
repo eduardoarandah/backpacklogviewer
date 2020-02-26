@@ -1,5 +1,5 @@
-@extends('backpack::layout')
-@section('after_styles')    
+@extends(backpack_view('layouts.top_left'))
+@section('after_styles')
     <style>
         /*extra*/
         .logviewer-menu-item {
@@ -264,8 +264,8 @@
 @append
 
 @section('header')
-    <section class="content-header">  
-        
+    <section class="content-header">
+
         <span class="text-muted pull-right hidden-xs">
             LogViewer - <span class="label label-info">version {{ log_viewer()->version() }}</span>
         </span>
@@ -276,7 +276,7 @@
         <a class="logviewer-menu-item" href="{{ route('log-viewer::logs.list') }}">
           <i class="fa fa-archive"></i> Logs
         </a>
-        
+
     </section>
 @endsection
 
