@@ -6,7 +6,7 @@ Integrate [ArcaneDev/LogViewer](https://github.com/ARCANEDEV/LogViewer) in your 
 
 # Requirements
 
-- ![Laravel Backpack](https://github.com/Laravel-Backpack/Base)
+[Laravel Backpack](https://github.com/Laravel-Backpack/Base)
 
 
 ## Installation
@@ -31,4 +31,4 @@ More options available in /config/log-viewer.php
 
 Documentation:
 
-![https://github.com/ARCANEDEV/LogViewer](https://github.com/ARCANEDEV/LogViewer)
+[https://github.com/ARCANEDEV/LogViewer](https://github.com/ARCANEDEV/LogViewer)
